@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h2>SELF ASESMEN COVID 19 BAGI PEGAWAI</h2>
+<div class="container">
+    <div class="subpertanyaan">
+        <h6>Nama Pegawai</h6>
+        <input id="namapegawai" class="form-control form-control-sm" type="text" placeholder="" onkeyup="this.value = this.value.toUpperCase();">
+    </div>   
+    <div class="subpertanyaan">
+        <h6>Pergi ke tempat umum dan berkerumun?</h6>
+        <select class="form-control form-control-sm" id="ask1">
+            <option value="a" selected="selected" disabled>Pilih Jawaban</option>
+            <option value="1">Ya</option>
+            <option value="0">Tidak</option>
+        </select>
+    </div>
+    <div class="subpertanyaan">
+        <h6>Menggunakan transportasi umum?</h6>
+        <select class="form-control form-control-sm" id="ask2">
+            <option value="a" selected="selected" disabled>Pilih Jawaban</option>
+            <option value="1">Ya</option>
+            <option value="0">Tidak</option>
+        </select>
+    </div>
+    <div class="subpertanyaan">
+    <h6>Pergi ke wilayah <span>Zona Merah?</span></h6>
+    <select class="form-control form-control-sm" id="ask3">
+        <option value="a" selected="selected" disabled>Pilih Jawaban</option>
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+    </select>
+    </div>
+    <div class="subpertanyaan">
+    <h6>Ikut kegiatan yang melibatkan banyak orang?</h6>
+    <select class="form-control form-control-sm" id="ask4">
+        <option value="a" selected="selected" disabled>Pilih Jawaban</option>
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+    </select>
+    </div>
+    <div class="subpertanyaan">
+    <h6>Kontak dengan <span>ODP, PDP atau Terkonfirmasi Covid-19</span>?</h6>
+    <select class="form-control form-control-sm" id="ask5">
+        <option value="a" selected="selected" disabled>Pilih Jawaban</option>
+        <option value="5">Ya</option>
+        <option value="0">Tidak</option>
+    </select>
+    </div>
+    <div class="subpertanyaan">
+    <h6>Anda sedang demam, batuk, pilek atau sesak nafas?</h6>
+    <select class="form-control form-control-sm" id="ask6">
+        <option value="a" selected="selected" disabled>Pilih Jawaban</option>
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+    </select>
+    </div>
+    <button type="button" class="btn btn-danger" onclick="nilai()">Kirim</button>
+</div>
+<div id="popupmodal">
+    <div class="headmodal">
+        <p>HASIL PENILAIAN ASESMEN MANDIRI <br> COVID-19 </p>
+    </div>
+    <div class="contentmodal">
+        <p>Tanggal/Waktu: <span id="tanggalwaktu">INI TANGGAL</span></p>
+        <p>NILAI ASESMEN ATAS NAMA :</p>
+        <p id="namashow">namashow</p>
+        <p id="hasilkalkulasi">hasilkalkulasi</p>
+        <img id="logo" src="kuning.png" alt="">
+        <p id="rekomendasi">INI REKOMENDASINYA GUYZ SEDIKIT PANJANG SIH KATA-KATANYA OK BOS</p>
+    </div>
+    <div class="footmodal">
+        <button type="button" class="btn btn-danger" onclick="sembunyi()">Keluar</button>
+        <button type="button" class="btn btn-danger" id="screenshot">Screenshot</button>
+    </div>
+</div>
+<div id="lds-facebook"><div></div><div></div><div></div></div>
+<div id="lds-dual-ring"></div>
+<script src="script.js"></script>
+</body>
+</html>

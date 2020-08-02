@@ -1,0 +1,148 @@
+.subpertanyaan{
+    margin-bottom: 20px;
+}
+
+h6 span{
+    color: red;
+}
+
+h2{
+    text-align: center;
+    background-color: tomato;
+    color: white;
+}
+#popupmodal {
+    text-align: center;
+    background-color: rgb(216, 233, 233);
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+#popupmodal.active {
+    text-align: center;
+    background-color: rgb(216, 233, 233);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.headmodal{
+    background-color: salmon;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.headmodal p{
+    font-weight: bolder;
+}
+
+#namashow{
+    font-size: 2em;
+}
+
+#hasilkalkulasi{
+    font-size: 5em;
+    font-weight: bolder;
+    background-color: rgb(220, 121, 238);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    color: white;
+}
+
+#rekomendasi {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.footmodal{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0 10px;
+}
+
+#logo{
+    height: 270px;
+}
+
+/* ini untuk loader */
+
+#lds-facebook {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  #lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: rgb(255, 0, 0);
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  #lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  #lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  #lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 90px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 60px;
+    }
+  }
+
+  #lds-dual-ring {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  #lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0) transparent rgb(255, 0, 0) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
