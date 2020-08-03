@@ -15,10 +15,10 @@ h2{
     text-align: center;
     background-color: rgb(216, 233, 233);
     position: fixed;
-    top: -50%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 80vh;
     border-radius: 5px;
     transition: 1s;
 }
