@@ -46,6 +46,10 @@ function nilai(){
             }
             const tampil = document.getElementById("popupmodal");
             tampil.classList.toggle("active");
+            const blur = document.getElementById("atas");
+            const blur2 = document.getElementById("bawah");
+            blur.style.filter = "blur(5px)";
+            blur2.style.filter = "blur(5px)";
         }
     }
     setTimeout(hitung, 2500);
@@ -54,6 +58,10 @@ function nilai(){
 function sembunyi(){
     const tampil = document.getElementById("popupmodal");
     tampil.classList.toggle("active");
+    const blur = document.getElementById("atas");
+    const blur2 = document.getElementById("bawah");
+    blur.style.filter = "blur(0)";
+    blur2.style.filter = "blur(0)";
 }
 
 
